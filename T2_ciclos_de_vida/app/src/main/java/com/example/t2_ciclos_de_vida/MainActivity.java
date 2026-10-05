@@ -1,5 +1,6 @@
 package com.example.t2_ciclos_de_vida;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.i("Ejemplo", "Estoy en on Start");
+
     }
 
     protected void onRestart() {
@@ -47,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onDestroy() {
         super.onDestroy();
-        Log.i("Ejemplo", "Estoy en on Destroy");
+        Log.i("Ejemplo", "Estoy en onDestroy");
+        Intent ejemplo = new Intent(this, MainActivity2.class);
+        startActivity(ejemplo);
     }
 }
