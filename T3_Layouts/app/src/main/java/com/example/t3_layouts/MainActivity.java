@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         //setContentView(R.layout.activity_main);
-        setContentView(R.layout.frame_layout);
+       // setContentView(R.layout.grid_layout_ejercicio);
+        setContentView(R.layout.grid_layout_ejercicio);
+
     }
 }
